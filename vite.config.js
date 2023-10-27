@@ -7,7 +7,6 @@ export default defineConfig({
     define: {
         global: 'globalThis'
     },
-    root: 'example',
     plugins: [
         preact({
             devtoolsInProd: false,
@@ -36,7 +35,7 @@ export default defineConfig({
     },
     build: {
         minify: false,
-        outDir: '../public',
+        outDir: './public',
         emptyOutDir: true,
         sourcemap: 'inline'
     }
