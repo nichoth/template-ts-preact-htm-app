@@ -25,7 +25,6 @@ export function Example () {
     function plus (ev) {
         ev.preventDefault()
         Increase(state)
-        console.log('click')
     }
 
     function minus (ev) {
