@@ -23,6 +23,7 @@
     "route-event": "^4.1.10"
   },
   "devDependencies": {
+    "@nichoth/debug": "^0.2.2",
     "@nichoth/tapzero": "^0.8.0",
     "@preact/preset-vite": "^2.5.0",
     "@typescript-eslint/parser": "^5.55.0",

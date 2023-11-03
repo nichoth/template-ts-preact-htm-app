@@ -4,6 +4,7 @@ import {
     Primary as ButtonOutlinePrimary,
     ButtonOutline
 } from '@nichoth/components/htm/button-outline'
+import { createDebug } from '@nichoth/debug'
 import { State, Increase, Decrease } from './state.js'
 import Router from './routes/index.js'
 import '@nichoth/components/button-outline.css'
@@ -11,8 +12,10 @@ import './style.css'
 
 const router = Router()
 const state = State()
+const debug = createDebug()
 
 export function Example () {
+    debug('rendering example...')
     const match = router.match(state.route.value)
     const ChildNode = match.action(match, state.route)
 
