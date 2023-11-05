@@ -20,7 +20,7 @@ export function Example () {
     const ChildNode = match.action(match, state.route)
 
     if (!match) {
-        return html`<div className="404">
+        return html`<div class="404">
             <h1>404</h1>
         </div>`
     }
