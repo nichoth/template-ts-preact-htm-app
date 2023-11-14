@@ -17,13 +17,14 @@ const debug = createDebug()
 export function Example () {
     debug('rendering example...')
     const match = router.match(state.route.value)
-    const ChildNode = match.action(match, state.route)
 
     if (!match) {
         return html`<div class="404">
             <h1>404</h1>
         </div>`
     }
+
+    const ChildNode = match.action(match, state.route)
 
     function plus (ev) {
         ev.preventDefault()
@@ -35,17 +36,22 @@ export function Example () {
         Decrease(state)
     }
 
-    return html`<div>
+    return html`<div class="content">
         <h1>hello</h1>
 
-        <ul>
-            <li><a href="/aaa">aaa</a></li>
-            <li><a href="/bbb">bbb</a></li>
-            <li><a href="/ccc">ccc</a></li>
-        </ul>
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li class="${getClass('/aaa')}"><a href="/aaa">aaa</a></li>
+                    <li class="${getClass('/bbb')}"><a href="/bbb">bbb</a></li>
+                    <li class="${getClass('/ccc')}"><a href="/ccc">ccc</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <div>
             <div>count: ${state.count.value}</div>
+
             <ul class="count-controls">
                 <li>
                     <${ButtonOutlinePrimary} onClick=${plus}>
@@ -62,6 +68,14 @@ export function Example () {
 
         <${ChildNode} />
     </div>`
+}
+
+function getClass (href) {
+    return isActive(href) ? 'active' : ''
+}
+
+function isActive (href) {
+    return location.pathname === href
 }
 
 render(html`<${Example} />`, document.getElementById('root')!)
