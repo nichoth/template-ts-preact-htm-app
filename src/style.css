@@ -32,8 +32,4 @@ nav {
 
 button {
     cursor: pointer;
-
-    &:hover {
-        background: seashell;
-    }
 }
