@@ -15,7 +15,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@nichoth/components": "^0.9.1",
+    "@nichoth/components": "^0.13.3",
     "@nichoth/routes": "^3.0.7",
     "@preact/signals": "^1.2.1",
     "htm": "^3.1.1",
