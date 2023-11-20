@@ -7,6 +7,7 @@
     }
   },
   "rules": {
+    "type-annotation-spacing": { "before": false, "after": false },
     "operator-linebreak": ["off"],
     "indent": ["error", 4, { "ignoredNodes": ["TemplateLiteral *"] }],
     "multiline-ternary": "off",
