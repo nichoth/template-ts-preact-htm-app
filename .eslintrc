@@ -8,7 +8,10 @@
   },
   "rules": {
     "operator-linebreak": ["off"],
-    "indent": ["error", 4, { "ignoredNodes": ["TemplateLiteral *"] }],
+    "indent": ["error", 4, {
+      "SwitchCase": 1,
+      "ignoredNodes": ["TemplateLiteral *"]
+    }],
     "multiline-ternary": "off",
     "no-multiple-empty-lines": [
       "error",
