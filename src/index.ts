@@ -14,6 +14,11 @@ const router = Router()
 const state = State()
 const debug = createDebug()
 
+if (import.meta.env.DEV || import.meta.env.MODE === 'staging') {
+    // @ts-expect-error DEV env
+    window.state = state
+}
+
 export function Example () {
     debug('rendering example...')
     const match = router.match(state.route.value)
