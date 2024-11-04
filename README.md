@@ -14,7 +14,7 @@ A template for applications using `preact`, `htm`, and typescript. Uses `tape-ru
 * eslint via [standardx](https://www.npmjs.com/package/standardx) -- `npm run lint`
 * test in a browser environment via `tape-run` -- see `npm test`. Includes `tap` testing tools -- [tapzero](https://github.com/nichoth/tapzero) and [tap-arc](https://www.npmjs.com/package/tap-arc)
 * CI via github actions
-* routing via [route-event](https://github.com/nichoth/route-event) and [@nichoth/routes](https://github.com/nichoth/routes)
+* routing via [route-event](https://github.com/bicycle-codes/route-event) and [@bicycle-codes/routes](https://github.com/nichoth/routes)
 
 
 ## architecture
