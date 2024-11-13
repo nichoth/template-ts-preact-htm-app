@@ -24,7 +24,7 @@
     "route-event": "^6.0.0"
   },
   "devDependencies": {
-    "@bicycle-codes/debug": "^0.6.13",
+    "@bicycle-codes/debug": "^0.7.2",
     "@bicycle-codes/tapzero": "^0.10.0",
     "@preact/preset-vite": "^2.8.2",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
