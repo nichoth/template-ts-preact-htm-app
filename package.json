@@ -28,7 +28,7 @@
     "auto-changelog": "^2.4.0",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.20.1",
     "eslint-config-standard": "^17.1.0",
     "globby": "^14.1.0",
     "http-server": "^14.1.1",
