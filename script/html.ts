@@ -13,14 +13,14 @@ async function build () {
     const files = await globby(['src/**/*.html', '!src/**/_*.html'])
 
     files.forEach(async (f) => {
-        const parts = f.split('/')
-        parts.shift()  // rm the `src` folder
-        const filename = parts.pop()
+        const pathparts = f.split('/')
+        pathparts.shift()  // rm the `src` folder
+        const filename = pathparts.pop()
         const withoutExtension = filename?.split('.').shift()
 
         const subfolder = path.join(
             output,
-            ...parts,
+            ...pathparts,
             (withoutExtension === 'index' ? '' : withoutExtension!)
         )
 

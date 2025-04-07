@@ -10,7 +10,7 @@
     "test-tape-run": "cat test/index.html | tape-run --input=html --static=test | tap-spec",
     "build": "mkdir -p ./public && rm -rf ./public/* && npm run build:js",
     "build:js": "esbuild --minify --bundle ./src/index.ts --outfile=./public/index.js",
-    "build:html": "esbuild --platform=node ./script/html.ts | node --input-type=module",
+    "build:html": "esbuild --format=esm --platform=node ./script/html.ts | node --input-type=module",
     "build:css": "postcss src/style.css -o public/style.css",
     "copy": "cp -r ./src/* ./public && cp ./_public/* ./public",
     "start": "npm run build && http-server --port 8888 ./public",
