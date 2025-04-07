@@ -1,26 +1,15 @@
-# template ts preact htm app ![tests](https://github.com/nichoth/template-ts-preact-htm-app/actions/workflows/nodejs.yml/badge.svg)
+# template website
 
-A template for applications using `preact`, `htm`, and typescript. Uses `tape-run` for tests in a browser environment. See [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) for something similar but for dependency modules.
+A template for a traditional website, with multiple pages.
 
 ## use
-1. Use the template button in github. Or clone this then `rm -rf .git && git init`. Then `npm i && npm init`.
 
-2. Edit the source code in `src/`.
+1. Use the template button in github.
 
-## featuring
+2. `npm i && npm init`
 
-* `preversion` npm hook -- lint via `standardx`.
-* `postversion` npm hook -- `git push && git push --tags`
-* eslint via [standardx](https://www.npmjs.com/package/standardx) -- `npm run lint`
-* test in a browser environment via `tape-run` -- see `npm test`. Includes `tap` testing tools -- [tapzero](https://github.com/nichoth/tapzero) and [tap-arc](https://www.npmjs.com/package/tap-arc)
-* CI via github actions
-* routing via [route-event](https://github.com/bicycle-codes/route-event) and [@bicycle-codes/routes](https://github.com/nichoth/routes)
+3. Edit the source code in `src/`.
 
+4. `mv ./README.example.md README.md`
 
-## architecture
-
-See [this article](https://gomakethings.com/easier-state-management-with-preact-signals/) for more details about application architecture.
-
-We create application state and logic in the file [./src/state.ts](./src/state.ts). This exports static functions, creates a state object, and sets up URL routing.
-
-In the view code, you would call the functions exposed here with a state object, in response to application events.
+Edit the README file.
