@@ -24,7 +24,7 @@
     "@bicycle-codes/tapzero": "^0.10.0",
     "@substrate-system/debug": "^0.7.22",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
-    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/parser": "^8.29.1",
     "auto-changelog": "^2.4.0",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
