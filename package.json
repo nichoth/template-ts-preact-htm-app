@@ -36,7 +36,7 @@
     "postcss-nesting": "^14.0.0",
     "tap-spec": "^5.0.0",
     "tape-run": "^11.0.0",
-    "typescript": "^5.3.3",
+    "typescript": "^6.0.2",
     "vite": "^8.0.0"
   },
   "author": "nichoth <nichoth@gmail.com> (https://nichoth.com)"
